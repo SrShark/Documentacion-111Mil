@@ -112,8 +112,3 @@ Reutilización de servicios brindados por la interfaz brindada por cada capa. Me
 |Última Modificación:   | 25/04/2018                |
 |Versión Actual:        | 1.3                       |
 |Equipo de trabajo:     | Araceli, Ramiro, Nicolás  |
-
-|Fecha de modificación  |Involucrados de modificación| Detalle de modificación |
-|-----------------------|----------------------------|-------------------------|
-| 15/04/2018    | Equipo de trabajo A | Confección del template del documento |
-| 15/04/2018    | Equipo de trabajo B | Redacción Intro, Objetivo, limites, alcances del sistema |
