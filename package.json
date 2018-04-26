@@ -1,0 +1,11 @@
+{
+  "name": "documentacion-proyecto-delivery",
+  "version": "1.0.0",
+  "description": "documentación del modulo delivery | Proyecto UTN - Plan 111Mil",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {},
+  "author": "",
+  "license": "MIT"
+}
