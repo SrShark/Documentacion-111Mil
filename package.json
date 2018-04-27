@@ -1,8 +1,8 @@
 {
   "name": "documentacion-proyecto-delivery",
   "version": "1.0.0",
-  "description": "documentación del modulo delivery | Proyecto UTN - Plan 111Mil",
-  "main": "index.js",
+  "description": "Documentación del Proyecto Delivery | UTN - Plan 111Mil",
+  "main": "config.js",
   "dependencies": {},
   "devDependencies": {},
   "scripts": {},
