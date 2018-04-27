@@ -22,7 +22,7 @@ module.exports = {
           ['/#diagrama-de-entidad-relacion-der' ,'Diagrama de Entidad-Relación (DER)'],
           ['/#diagrama-de-clases-uml' ,'Diagrama de Clases (UML)'],
           ['/#diagrama-casos-de-usos-use-case' ,'Diagrama Casos de Usos (Use Case)'],
-          ['/#historial-de-revisiones' ,'Historial de revisiones']
+          ['/#historial-de-revisiones' ,'Historial de versiones']
         ]
       }
     ],
