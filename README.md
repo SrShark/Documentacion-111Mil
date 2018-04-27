@@ -15,11 +15,11 @@ A continuación se detalla el enunciado para conocer el dominio con el cual se t
 
 Una `pizzería` de la ciudad ofrece a sus `clientes` una amplia `variedad de pizzas` de fabricación propia, de `varios tamaños (8, 10 y 12 porciones)`. Los clientes tienen a disposición un menú que describe para cada una de las `variedades`, el `nombre`, los `ingredientes` y el `precio` según el `tamaño` y el `tipo (a la piedra, a la parrilla, de molde)` de la pizza. Los clientes realizan sus pedidos en el mostrador o por teléfono.
 
-El pedido debe contener el `nombre del Cliente`, para llamarlo cuando su pedido está listo; la `cantidad de pizzas`, el `tamaño`, la `variedad`, la `fecha del pedido`, la `hora` en la que el pedido debe entregarse y la `demora estimada` informada al cliente.
+El pedido debe contener el `nombre del cliente`, para llamarlo cuando su pedido está listo; la `cantidad de pizzas`, el `tamaño`, la `variedad`, la `fecha del pedido`, la `hora` en la que el pedido debe entregarse y la `demora estimada` informada al cliente.
 
 El pedido va a la cocina y cuando está preparado se informa al que lo tomó para que se genere la factura correspondiente y se le entregue el pedido al cliente.
 
-Esta empresa también cuenta con el servicio de delivey, cuando se toma dicho pedido (puede ser telefónico) deberán solicitarse datos extras como `direccion` y `número de teléfono`. Con los datos solicitados, el pedido será entregado al `Personal de Entrega` para poder efectuar la entrega requerida por el cliente.
+Esta empresa también cuenta con el servicio de delivey, cuando se toma dicho pedido (puede ser telefónico) deberán solicitarse datos extras como `direccion` y `número de teléfono`. Con los datos solicitados, el pedido será entregado al `personal de entrega` para poder efectuar la entrega requerida por el cliente.
 
 El dueño de la pizzería ha manifestado la necesidad de acceder al menos a la siguiente información:
 
@@ -144,8 +144,8 @@ Reutilización de servicios brindados por la interfaz brindada por cada capa. Me
 |Última Modificación:   | 26/04/2018                |
 |Versión Actual:        | 1.11                      |
 
-|Equipos                |Integrantes                |
-|-----------------------|---------------------------|
-|Profesores             | Araceli Mendoza - Nicolás Oliva - Ramiro |
+|Equipos                |Integrantes                                                           |
+|-----------------------|----------------------------------------------------------------------|
+|Profesores             | Araceli Mendoza - Nicolás Oliva - Ramiro                             |
 |Equipo A               | Guido Cavallo - Sebastián Cuaglia - Ruben Malizia - Lionel Scattolini|
-|Equipo B               | Daniel Rosso - Pablo Mansilla - Federico Boccardo|
+|Equipo B               | Daniel Rosso - Pablo Mansilla - Federico Boccardo                    |
