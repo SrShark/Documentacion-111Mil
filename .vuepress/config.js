@@ -1,7 +1,11 @@
 module.exports = {
-  base: '/documentacion/',
   title: 'PROYECTO DELIVERY',
   description: 'Documentación del proyecto modulo delivery para el plan 111mil - UTN',
+  configureWebpack: {
+    output: {
+      publicPath: './'
+    }
+  },
   themeConfig: {
     nav: [
       { text: 'INICIO', link: '/' },
@@ -26,6 +30,7 @@ module.exports = {
         ]
       }
     ],
+    search: false,
     repo: 'https://github.com/Plan111UTN',
     repoLabel: 'GITHUB'
   }

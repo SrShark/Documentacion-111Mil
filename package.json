@@ -4,9 +4,7 @@
   "description": "Documentación del Proyecto Delivery | UTN - Plan 111Mil",
   "main": "config.js",
   "dependencies": {},
-  "devDependencies": {
-    "vuepress": "^0.8.4"
-  },
+  "devDependencies": {},
   "scripts": {},
   "author": "",
   "license": "MIT"
