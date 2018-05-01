@@ -29,7 +29,7 @@ El dueño de la pizzería ha manifestado la necesidad de acceder al menos a la s
 * Barrios donde más se realizan entregas de pedidos.
 * Mejorar la información entregada al cadete para realizar los viajes.
 
-## DESAROLLO
+## DESARROLLO
 
 ### Procesos que se llevan a cabo
 
@@ -148,4 +148,4 @@ Reutilización de servicios brindados por la interfaz brindada por cada capa. Me
 |-----------------------|----------------------------------------------------------------------|
 |Profesores             | Araceli Mendoza - Nicolás Oliva - Ramiro                             |
 |Equipo A               | Guido Cavallo - Sebastián Cuaglia - Ruben Malizia - Lionel Scattolini|
-|Equipo B               | Daniel Rosso - Pablo Mansilla - Federico Boccardo                    |
+|Equipo B               | Daniel Rosso - Pablo Mansilla - Federico Boccardo - Hernán Grosso    |
