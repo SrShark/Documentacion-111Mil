@@ -1,10 +1,12 @@
 {
-  "name": "documentacion-proyecto-delivery",
+  "name": "Documentacion-111Mil",
   "version": "1.0.0",
   "description": "Documentación del Proyecto Delivery | UTN - Plan 111Mil",
   "main": "config.js",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "vuepress": "^0.8.4"
+  },
   "scripts": {},
   "author": "",
   "license": "MIT"
