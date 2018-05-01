@@ -1,2 +1,6 @@
+# Carpetas #
 /node_modules/
 /dist/
+
+# Logs #
+*.log
