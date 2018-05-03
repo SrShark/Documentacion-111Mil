@@ -1,6 +1,6 @@
 # Carpetas #
 /node_modules/
-/.vuepress/dist/
+.vuepress/dist/
 
 # Logs #
 *.log
