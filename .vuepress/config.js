@@ -1,6 +1,5 @@
 module.exports = {
-  base: '/documentacion/',
-  title: 'PROYECTO DELIVERY',
+  title: 'DOCUMENTACIÓN',
   description: 'Documentación del proyecto modulo delivery para el plan 111mil - UTN',
   themeConfig: {
     nav: [
@@ -22,6 +21,7 @@ module.exports = {
           ['/#diagrama-de-entidad-relacion-der' ,'Diagrama de Entidad-Relación (DER)'],
           ['/#diagrama-de-clases-uml' ,'Diagrama de Clases (UML)'],
           ['/#diagrama-casos-de-usos-use-case' ,'Diagrama Casos de Usos (Use Case)'],
+          ['/#maquina-de-estado' ,'Máquina de Estado'],
           ['/#historial-de-versiones' ,'Historial de versiones']
         ]
       }

@@ -124,6 +124,16 @@ Reutilización de servicios brindados por la interfaz brindada por cada capa. Me
 
 * Project Object Model (POM): [Maven](https://maven.apache.org/)
 
+  * [Dependecia Hibernate](https://mvnrepository.com/artifact/org.hibernate/hibernate-core)
+
+  * [Dependecia Hibernate-persistence](https://mvnrepository.com/artifact/org.hibernate.javax.persistence/hibernate-jpa-2.1-api)
+
+  * [Dependecia MySQL connector](https://mvnrepository.com/artifact/mysql/mysql-connector-java)
+
+  * [Dependecia Jboss](https://mvnrepository.com/artifact/org.jboss.logging/jboss-logging)
+
+  * [Dependecia Lombok](https://mvnrepository.com/artifact/org.projectlombok/lombok)
+
 ## DIAGRAMA DE ENTIDAD-RELACIÓN (DER)
 
 ![](./assets/diagrama-entidad-relacion-der.jpg)
@@ -135,6 +145,10 @@ Reutilización de servicios brindados por la interfaz brindada por cada capa. Me
 ## DIAGRAMA CASOS DE USOS (USE CASE)
 
 ![](./assets/diagrama-caso-de-uso.svg)
+
+## MÁQUINA DE ESTADO
+
+![](./assets/maquina-de-estado.svg)
  
 ## HISTORIAL DE VERSIONES
 
@@ -142,7 +156,7 @@ Reutilización de servicios brindados por la interfaz brindada por cada capa. Me
 |-----------------------|---------------------------|
 |Fecha de Creación:     | 15/04/2018                |
 |Última Modificación:   | 26/04/2018                |
-|Versión Actual:        | 1.11                      |
+|Versión Actual:        | 1.12                      |
 
 |Equipos                |Integrantes                                                           |
 |-----------------------|----------------------------------------------------------------------|
