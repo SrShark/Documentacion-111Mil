@@ -13,7 +13,7 @@ Para la obtención de datos necesarios se utilizó el dominio de negocio aportad
 
 A continuación se detalla el enunciado para conocer el dominio con el cual se trabajará.
 
-Una `pizzería` de la ciudad ofrece a sus `clientes` una amplia `variedad de pizzas` de fabricación propia, de `varios tamaños (8, 10 y 12 porciones)`. Los clientes tienen a disposición un menú que describe para cada una de las `variedades`, el `nombre`, los `ingredientes` y el `precio` según el `tamaño` y el `tipo (a la piedra, a la parrilla, de molde)` de la `pizza`. Los clientes realizan sus pedidos en el mostrador o por teléfono.
+Una `pizzería` de la ciudad ofrece a sus clientes una amplia `variedad de pizzas` de fabricación propia, de `varios tamaños (8, 10 y 12 porciones)`. Los clientes tienen a disposición un menú que describe para cada una de las `variedades`, el `nombre`, los `ingredientes` y el `precio` según el `tamaño` y el `tipo (a la piedra, a la parrilla, de molde)` de la `pizza`. Los clientes realizan sus pedidos en el mostrador o por teléfono.
 
 El `pedido` debe contener el `nombre del cliente`, para llamarlo cuando su pedido está listo; la `cantidad de pizzas`, el `tamaño`, la `variedad`, la `fecha del pedido`, la `hora` en la que el pedido debe entregarse y la `demora estimada` informada al cliente.
 
@@ -124,6 +124,14 @@ Reutilización de servicios brindados por la interfaz brindada por cada capa. Me
 
 * Project Object Model (POM): [Maven](https://maven.apache.org/)
 
+  * [Dependecia Hibernate](https://mvnrepository.com/artifact/org.hibernate/hibernate-core)
+
+  * [Dependecia Hibernate-persistence](https://mvnrepository.com/artifact/org.hibernate.javax.persistence/hibernate-jpa-2.1-api)
+
+  * [Dependecia MySQL connector](https://mvnrepository.com/artifact/mysql/mysql-connector-java)
+
+  * [Dependecia Lombok](https://mvnrepository.com/artifact/org.projectlombok/lombok)
+
 ## DIAGRAMA DE ENTIDAD-RELACIÓN (DER)
 
 ![](./assets/diagrama-entidad-relacion-der.jpg)
@@ -135,14 +143,18 @@ Reutilización de servicios brindados por la interfaz brindada por cada capa. Me
 ## DIAGRAMA CASOS DE USOS (USE CASE)
 
 ![](./assets/diagrama-caso-de-uso.svg)
+
+## MÁQUINA DE ESTADO
+
+![](./assets/maquina-de-estado.svg)
  
 ## HISTORIAL DE VERSIONES
 
 |Control de Versionado  |Datos        |
 |-----------------------|-------------|
 |Fecha de Creación:     |15/04/2018   |
-|Última Modificación:   |02/05/2018   |
-|Versión Actual:        |1.11         |
+|Última Modificación:   |09/05/2018   |
+|Versión Actual:        |1.12         |
 
 ## INTEGRANTES
 
