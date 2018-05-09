@@ -154,7 +154,7 @@ Reutilización de servicios brindados por la interfaz brindada por cada capa. Me
 |-----------------------|-------------|
 |Fecha de Creación:     |15/04/2018   |
 |Última Modificación:   |09/05/2018   |
-|Versión Actual:        |1.12         |
+|Versión Actual:        |1.13         |
 
 ## INTEGRANTES
 
