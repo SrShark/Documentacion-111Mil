@@ -120,7 +120,7 @@ Reutilización de servicios brindados por la interfaz brindada por cada capa. Me
 
 * Gestor de Repositorios: [Github Desktop](https://desktop.github.com/)
 
-* Generación de reportes: [Jasper Reports - Ireport Versión 5.2](https://community.jaspersoft.com/download)
+* Generación de reportes: [Jasper Studio versión 6.5](https://community.jaspersoft.com/project/jaspersoft-studio/releases)
 
 * Project Object Model (POM): [Maven](https://maven.apache.org/)
 
@@ -146,15 +146,17 @@ Reutilización de servicios brindados por la interfaz brindada por cada capa. Me
 
 ## MÁQUINA DE ESTADO
 
-![](./assets/maquina-de-estado.svg)
+![](./assets/maquina-de-estado-pedido.svg)
+
+![](./assets/maquina-de-estado-personal-entrega.svg)
  
 ## HISTORIAL DE VERSIONES
 
 |Control de Versionado  |Datos        |
 |-----------------------|-------------|
 |Fecha de Creación:     |15/04/2018   |
-|Última Modificación:   |09/05/2018   |
-|Versión Actual:        |1.13         |
+|Última Modificación:   |15/05/2018   |
+|Versión Actual:        |1.14         |
 
 ## INTEGRANTES
 
@@ -166,6 +168,7 @@ Reutilización de servicios brindados por la interfaz brindada por cada capa. Me
 |Equipo A       |[Guido Cavallo](https://github.com/SrShark)        |
 |               |[Sebastián Cuaglia](https://github.com/sebacuaglia)| 
 |               |[Ruben Malizia](https://github.com/Malizia27)      | 
+|               |[Pablo Cruciani](https://github.com/PabloCruciani) | 
 |Equipo B       |[Daniel Rosso](https://github.com/daniel1rosso)    | 
 |               |[Pablo Mansilla](https://github.com/paulmansilla)  | 
 |               |[Federico Boccardo](https://github.com/Feedeac)    | 
