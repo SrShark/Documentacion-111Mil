@@ -6,10 +6,13 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>DOCUMENTACIÓN | PROYECTO DELIVERY - PLAN 111MIL</title>
   <meta name="description" content="Documentación del proyecto modulo delivery para el plan 111mil - UTN">
-  <link rel="preload" href="./assets/css/1.styles.ab74aaea.css" as="style">
-  <link rel="preload" href="./assets/js/app.46ff74f3.js" as="script">
-  <link rel="preload" href="./assets/js/0.70eb52a5.js" as="script">
-  <link rel="stylesheet" href="./assets/css/1.styles.ab74aaea.css">
+
+
+  <link rel="preload" href="./assets/css/0.styles.60094afd.css" as="style">
+  <link rel="preload" href="./assets/js/app.a3eaf2cc.js" as="script">
+  <link rel="preload" href="./assets/js/1.ce3a71b2.js" as="script">
+  <link rel="preload" href="./assets/js/2.2a7d45ed.js" as="script">
+  <link rel="stylesheet" href="./assets/css/0.styles.60094afd.css">
 </head>
 
 <body>
@@ -107,6 +110,12 @@
                   <a href="/#diagrama-casos-de-usos-use-case" class="sidebar-link">Diagrama Casos de Usos (Use Case)</a>
                 </li>
                 <li>
+                  <a href="/#diagrama-casos-de-usos-trazo-fino" class="sidebar-link">Diagrama Casos de Usos Trazo Fino</a>
+                </li>
+                <li>
+                  <a href="/#maquina-de-estado" class="sidebar-link">Máquina de Estado</a>
+                </li>
+                <li>
                   <a href="/#historial-de-versiones" class="sidebar-link">Historial de versiones</a>
                 </li>
                 <li>
@@ -145,8 +154,7 @@
             <a href="#dominio" aria-hidden="true" class="header-anchor">#</a> Dominio</h3>
           <p>A continuación se detalla el enunciado para conocer el dominio con el cual se trabajará.</p>
           <p>Una
-            <code>pizzería</code> de la ciudad ofrece a sus
-            <code>clientes</code> una amplia
+            <code>pizzería</code> de la ciudad ofrece a sus clientes una amplia
             <code>variedad de pizzas</code> de fabricación propia, de
             <code>varios tamaños (8, 10 y 12 porciones)</code>. Los clientes tienen a disposición un menú que describe para cada
             una de las
@@ -340,6 +348,29 @@
               <p>Project Object Model (POM):
                 <a href="https://maven.apache.org/" target="_blank" rel="noopener noreferrer">Maven</a>
               </p>
+              <ul>
+                <li>
+                  <p>
+                    <a href="https://mvnrepository.com/artifact/org.hibernate/hibernate-core" target="_blank" rel="noopener noreferrer">Dependecia Hibernate</a>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <a href="https://mvnrepository.com/artifact/org.hibernate.javax.persistence/hibernate-jpa-2.1-api" target="_blank"
+                      rel="noopener noreferrer">Dependecia Hibernate-persistence</a>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <a href="https://mvnrepository.com/artifact/mysql/mysql-connector-java" target="_blank" rel="noopener noreferrer">Dependecia MySQL connector</a>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <a href="https://mvnrepository.com/artifact/org.projectlombok/lombok" target="_blank" rel="noopener noreferrer">Dependecia Lombok</a>
+                  </p>
+                </li>
+              </ul>
             </li>
           </ul>
           <h2 id="diagrama-de-entidad-relacion-der">
@@ -350,12 +381,489 @@
           <h2 id="diagrama-de-clases-uml">
             <a href="#diagrama-de-clases-uml" aria-hidden="true" class="header-anchor">#</a> DIAGRAMA DE CLASES (UML)</h2>
           <p>
-            <img src="./assets/img/diagrama-de-clases-uml.33245e7d.svg" alt>
+            <img src="./assets/img/diagrama-de-clases-uml.59efd807.svg" alt>
           </p>
           <h2 id="diagrama-casos-de-usos-use-case">
             <a href="#diagrama-casos-de-usos-use-case" aria-hidden="true" class="header-anchor">#</a> DIAGRAMA CASOS DE USOS (USE CASE)</h2>
           <p>
-            <img src="./assets/img/diagrama-caso-de-uso.804daa7f.svg" alt>
+            <img src="./assets/img/diagrama-caso-de-uso.ba8525fd.svg" alt>
+          </p>
+          <h2 id="diagrama-casos-de-usos-trazo-fino">
+            <a href="#diagrama-casos-de-usos-trazo-fino" aria-hidden="true" class="header-anchor">#</a> DIAGRAMA CASOS DE USOS TRAZO FINO</h2>
+          <div class="c39" data-v-2eb43504>
+            <p class="c40 c19" data-v-2eb43504>
+              <span class="c28 c29" data-v-2eb43504></span>
+            </p>
+            <a id="t.e567fa81a964cc1a485d2479306673638b24e941" data-v-2eb43504></a>
+            <a id="t.0" data-v-2eb43504></a>
+            <table class="c41" data-v-2eb43504>
+              <tbody data-v-2eb43504>
+                <tr class="c6" data-v-2eb43504>
+                  <td colspan="6" rowspan="1" class="c20" data-v-2eb43504>
+                    <p class="c25" data-v-2eb43504>
+                      <span class="c5" data-v-2eb43504>Nivel del  Use Case</span>
+                      <span class="c12" data-v-2eb43504>:                  </span>
+                      <a id="id.gjdgxs" data-v-2eb43504></a>
+                      <span class="c35" data-v-2eb43504>☐  </span>
+                      <span class="c12" data-v-2eb43504>Negocio                                       </span>
+                      <span class="c35" data-v-2eb43504>☒</span>
+                      <span class="c0" data-v-2eb43504>   Sistema de Información</span>
+                    </p>
+                  </td>
+                </tr>
+                <tr class="c27" data-v-2eb43504>
+                  <td colspan="5" rowspan="1" class="c30 c36" data-v-2eb43504>
+                    <p class="c25" data-v-2eb43504>
+                      <span class="c5" data-v-2eb43504>Nombre del Use Case</span>
+                      <span class="c0" data-v-2eb43504>: Registrar Pedido</span>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="c16 c30" data-v-2eb43504>
+                    <p class="c25" data-v-2eb43504>
+                      <span class="c5" data-v-2eb43504>ID</span>
+                      <span class="c0" data-v-2eb43504>: 01</span>
+                    </p>
+                  </td>
+                </tr>
+                <tr class="c27" data-v-2eb43504>
+                  <td colspan="2" rowspan="1" class="c34" data-v-2eb43504>
+                    <p class="c25" data-v-2eb43504>
+                      <span class="c5" data-v-2eb43504>Actor Principal</span>
+                      <span class="c0" data-v-2eb43504>: Vendedor</span>
+                    </p>
+                  </td>
+                  <td colspan="4" rowspan="1" class="c24" data-v-2eb43504>
+                    <p class="c25" data-v-2eb43504>
+                      <span class="c5" data-v-2eb43504>Actor Secundario</span>
+                      <span class="c0" data-v-2eb43504>: No aplica.</span>
+                    </p>
+                  </td>
+                </tr>
+                <tr class="c7" data-v-2eb43504>
+                  <td colspan="6" rowspan="1" class="c20" data-v-2eb43504>
+                    <p class="c25" data-v-2eb43504>
+                      <span class="c5" data-v-2eb43504>Tipo de Use Case</span>
+                      <span class="c12" data-v-2eb43504>:                  </span>
+                      <span class="c35" data-v-2eb43504>☒</span>
+                      <span class="c12" data-v-2eb43504>  Concreto                                       </span>
+                      <span class="c35" data-v-2eb43504>☐</span>
+                      <span class="c0" data-v-2eb43504>   Abstracto</span>
+                    </p>
+                  </td>
+                </tr>
+                <tr class="c7" data-v-2eb43504>
+                  <td colspan="6" rowspan="1" class="c20" data-v-2eb43504>
+                    <p class="c25" data-v-2eb43504>
+                      <span class="c5" data-v-2eb43504>Objetivo</span>
+                      <span class="c0" data-v-2eb43504>: Registrar un nuevo pedido. </span>
+                    </p>
+                    <p class="c25 c19" data-v-2eb43504>
+                      <span class="c0" data-v-2eb43504></span>
+                    </p>
+                  </td>
+                </tr>
+                <tr class="c7" data-v-2eb43504>
+                  <td colspan="6" rowspan="1" class="c20" data-v-2eb43504>
+                    <p class="c25" data-v-2eb43504>
+                      <span class="c5" data-v-2eb43504>Precondiciones</span>
+                      <span class="c0" data-v-2eb43504>:  No aplica.</span>
+                    </p>
+                    <p class="c25 c19" data-v-2eb43504>
+                      <span class="c0" data-v-2eb43504></span>
+                    </p>
+                  </td>
+                </tr>
+                <tr class="c19" data-v-2eb43504>
+                  <td colspan="1" rowspan="2" class="c32" data-v-2eb43504>
+                    <p class="c25" data-v-2eb43504>
+                      <span class="c5" data-v-2eb43504>Post- Condiciones</span>
+                      <span class="c0" data-v-2eb43504> </span>
+                    </p>
+                    <p class="c25 c19" data-v-2eb43504>
+                      <span class="c0" data-v-2eb43504></span>
+                    </p>
+                  </td>
+                  <td colspan="5" rowspan="1" class="c38" data-v-2eb43504>
+                    <p class="c25" data-v-2eb43504>
+                      <span class="c5" data-v-2eb43504>Éxito: </span>
+                      <span class="c12" data-v-2eb43504>El pedido fue registrado con éxito.</span>
+                    </p>
+                    <p class="c19 c25" data-v-2eb43504>
+                      <span class="c0" data-v-2eb43504></span>
+                    </p>
+                  </td>
+                </tr>
+                <tr class="c19" data-v-2eb43504>
+                  <td colspan="5" rowspan="1" class="c38" data-v-2eb43504>
+                    <p class="c25" data-v-2eb43504>
+                      <span class="c5" data-v-2eb43504>Fracaso:</span>
+                    </p>
+                    <ul class="c3 lst-kix_list_17-0 start" data-v-2eb43504>
+                      <li class="c25 c42" data-v-2eb43504>
+                        <span class="c12" data-v-2eb43504>Opción Cancelar</span>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr class="c7" data-v-2eb43504>
+                  <td colspan="3" rowspan="1" class="c18" data-v-2eb43504>
+                    <p class="c25 c33" data-v-2eb43504>
+                      <span class="c5 c9" data-v-2eb43504>Curso Normal</span>
+                    </p>
+                  </td>
+                  <td colspan="3" rowspan="1" class="c17" data-v-2eb43504>
+                    <p class="c25 c33" data-v-2eb43504>
+                      <span class="c5 c9" data-v-2eb43504>Alternativas</span>
+                    </p>
+                  </td>
+                </tr>
+                <tr class="c14" data-v-2eb43504>
+                  <td colspan="3" rowspan="1" class="c18" data-v-2eb43504>
+                    <span class="c0" data-v-2eb43504>01. El caso de uso comienza cuando el Vendedor (V) selecciona la opción RegistrarPedido.</span>
+                  </td>
+                  <td colspan="3" rowspan="1" class="c17" data-v-2eb43504>
+                    <p class="c26 c19" data-v-2eb43504>
+                      <span class="c0" data-v-2eb43504></span>
+                    </p>
+                  </td>
+                </tr>
+                <tr class="c7" data-v-2eb43504>
+                  <td colspan="3" rowspan="1" class="c18" data-v-2eb43504>
+                    <span class="c0" data-v-2eb43504>02. El sistema solicita que se ingrese el nombre del cliente.</span>
+                  </td>
+                  <td colspan="3" rowspan="1" class="c17" data-v-2eb43504>
+                    <p class="c11" data-v-2eb43504>
+                      <span class="c0" data-v-2eb43504></span>
+                    </p>
+                  </td>
+                </tr>
+                <tr class="c7" data-v-2eb43504>
+                  <td colspan="3" rowspan="1" class="c18" data-v-2eb43504>
+                    <span class="c0" data-v-2eb43504>03. El V ingresa el nombre del cliente.</span>
+                  </td>
+                  <td colspan="3" rowspan="1" class="c17" data-v-2eb43504>
+                    <p class="c26 c19" data-v-2eb43504>
+                      <span class="c0" data-v-2eb43504></span>
+                    </p>
+                  </td>
+                </tr>
+                <tr class="c7" data-v-2eb43504>
+                  <td colspan="3" rowspan="1" class="c18" data-v-2eb43504>
+                    <span class="c0" data-v-2eb43504>04. El sistema solicita que ingrese el teléfono del cliente.</span>
+                  </td>
+                  <td colspan="3" rowspan="1" class="c17" data-v-2eb43504>
+                    <p class="c26 c19" data-v-2eb43504>
+                      <span class="c0" data-v-2eb43504></span>
+                    </p>
+                  </td>
+                </tr>
+                <tr class="c7" data-v-2eb43504>
+                  <td colspan="3" rowspan="1" class="c18" data-v-2eb43504>
+                    <span class="c0" data-v-2eb43504>05. El V ingresa el teléfono del cliente.</span>
+                  </td>
+                  <td colspan="3" rowspan="1" class="c17" data-v-2eb43504>
+                    <p class="c26 c19" data-v-2eb43504>
+                      <span class="c0" data-v-2eb43504></span>
+                    </p>
+                  </td>
+                </tr>
+                <tr class="c7" data-v-2eb43504>
+                  <td colspan="3" rowspan="1" class="c18" data-v-2eb43504>
+                    <span class="c0" data-v-2eb43504>06. El sistema solicita que se seleccione el tipo de entrega para el pedido.</span>
+                  </td>
+                  <td colspan="3" rowspan="1" class="c17" data-v-2eb43504>
+                    <p class="c19 c26" data-v-2eb43504>
+                      <span class="c0" data-v-2eb43504></span>
+                    </p>
+                  </td>
+                </tr>
+                <tr class="c7" data-v-2eb43504>
+                  <td colspan="3" rowspan="1" class="c18" data-v-2eb43504>
+                    <span class="c0" data-v-2eb43504>07. El V selecciona la opción Mostrador y es así.</span>
+                  </td>
+                  <td colspan="3" rowspan="1" class="c17" data-v-2eb43504>
+                    <p class="c13" data-v-2eb43504>
+                      <span class="c0" data-v-2eb43504>07.A Elige la opción Domicilio.</span>
+                    </p>
+                    <p class="c13" data-v-2eb43504>
+                      <span class="c0" data-v-2eb43504>    07.A.1 El sistema solicita que se seleccione la localidad correspondiente.</span>
+                    </p>
+                    <p class="c13" data-v-2eb43504>
+                      <span class="c0" data-v-2eb43504>    07.A.2 El V selecciona la localidad correspondiente.</span>
+                    </p>
+                    <p class="c13" data-v-2eb43504>
+                      <span class="c0" data-v-2eb43504>    07.A.3 El sistema solicita que se seleccione el barrio correspondiente de dicha localidad.</span>
+                    </p>
+                    <p class="c13" data-v-2eb43504>
+                      <span class="c0" data-v-2eb43504>    07.A.4 El V selecciona el barrio correspondiente.</span>
+                    </p>
+                    <p class="c13" data-v-2eb43504>
+                      <span class="c0" data-v-2eb43504>    07.A.5 El sistema solicita que se selección la calle correspondiente de ese barrio.</span>
+                    </p>
+                    <p class="c13" data-v-2eb43504>
+                      <span class="c0" data-v-2eb43504>    07.A.6 El V selecciona la calle correspondiente.</span>
+                    </p>
+                    <p class="c13" data-v-2eb43504>
+                      <span class="c0" data-v-2eb43504>    07.A.7 El sistema solicita que se ingrese la altura correspondiente.</span>
+                    </p>
+                    <p class="c13" data-v-2eb43504>
+                      <span class="c0" data-v-2eb43504>    07.A.8 El V ingresa la altura correspondiente.</span>
+                    </p>
+                    <p class="c13" data-v-2eb43504>
+                      <span class="c0" data-v-2eb43504>    07.A.9 El V selecciona la opción Calcular Costo de Envió.</span>
+                    </p>
+                    <p class="c13" data-v-2eb43504>
+                      <span class="c0" data-v-2eb43504>    07.A.10 Llamar Caso de Uso “Calcular Costo de Envió”.</span>
+                    </p>
+                    <p class="c13" data-v-2eb43504>
+                      <span class="c0" data-v-2eb43504>    07.A.11 El sistema muestra el costo del envió.</span>
+                    </p>
+                  </td>
+                </tr>
+                <tr class="c7" data-v-2eb43504>
+                  <td colspan="3" rowspan="1" class="c18" data-v-2eb43504>
+                    <span class="c0" data-v-2eb43504>08. El sistema solicita que seleccione la variedad de la pizza.</span>
+                  </td>
+                  <td colspan="3" rowspan="1" class="c17" data-v-2eb43504>
+                    <p class="c13 c19" data-v-2eb43504>
+                      <span class="c0" data-v-2eb43504></span>
+                    </p>
+                  </td>
+                </tr>
+                <tr class="c7" data-v-2eb43504>
+                  <td colspan="3" rowspan="1" class="c18" data-v-2eb43504>
+                    <span class="c0" data-v-2eb43504>09. El V selecciona una variedad.</span>
+                  </td>
+                  <td colspan="3" rowspan="1" class="c17" data-v-2eb43504>
+                    <p class="c13 c19" data-v-2eb43504>
+                      <span class="c0" data-v-2eb43504></span>
+                    </p>
+                  </td>
+                </tr>
+                <tr class="c7" data-v-2eb43504>
+                  <td colspan="3" rowspan="1" class="c18" data-v-2eb43504>
+                    <span class="c0" data-v-2eb43504>10. El sistema solicita que selección el tipo.</span>
+                  </td>
+                  <td colspan="3" rowspan="1" class="c17" data-v-2eb43504>
+                    <p class="c13 c19" data-v-2eb43504>
+                      <span class="c0" data-v-2eb43504></span>
+                    </p>
+                  </td>
+                </tr>
+                <tr class="c7" data-v-2eb43504>
+                  <td colspan="3" rowspan="1" class="c18" data-v-2eb43504>
+                    <span class="c0" data-v-2eb43504>11. El V selecciona el tipo.</span>
+                  </td>
+                  <td colspan="3" rowspan="1" class="c17" data-v-2eb43504>
+                    <p class="c13 c19" data-v-2eb43504>
+                      <span class="c0" data-v-2eb43504></span>
+                    </p>
+                  </td>
+                </tr>
+                <tr class="c7" data-v-2eb43504>
+                  <td colspan="3" rowspan="1" class="c18" data-v-2eb43504>
+                    <span class="c0" data-v-2eb43504>12. El sistema solicita que se seleccione el tamaño.</span>
+                  </td>
+                  <td colspan="3" rowspan="1" class="c17" data-v-2eb43504>
+                    <p class="c13 c19" data-v-2eb43504>
+                      <span class="c0" data-v-2eb43504></span>
+                    </p>
+                  </td>
+                </tr>
+                <tr class="c7" data-v-2eb43504>
+                  <td colspan="3" rowspan="1" class="c18" data-v-2eb43504>
+                    <span class="c0" data-v-2eb43504>13. El V selecciona el tamaño.</span>
+                  </td>
+                  <td colspan="3" rowspan="1" class="c17" data-v-2eb43504>
+                    <p class="c13 c19" data-v-2eb43504>
+                      <span class="c0" data-v-2eb43504></span>
+                    </p>
+                  </td>
+                </tr>
+                <tr class="c7" data-v-2eb43504>
+                  <td colspan="3" rowspan="1" class="c18" data-v-2eb43504>
+                    <span class="c0" data-v-2eb43504>14. El sistema solicita que se ingrese la cantidad de pizzas con las características anteriormente seleccionadas.</span>
+                  </td>
+                  <td colspan="3" rowspan="1" class="c17" data-v-2eb43504>
+                    <p class="c13 c19" data-v-2eb43504>
+                      <span class="c0" data-v-2eb43504></span>
+                    </p>
+                  </td>
+                </tr>
+                <tr class="c7" data-v-2eb43504>
+                  <td colspan="3" rowspan="1" class="c18" data-v-2eb43504>
+                    <span class="c0" data-v-2eb43504>15. El sistema solicita que se seleccione la confirmación de la agregación de dicha pizza.</span>
+                  </td>
+                  <td colspan="3" rowspan="1" class="c17" data-v-2eb43504>
+                    <p class="c13 c19" data-v-2eb43504>
+                      <span class="c0" data-v-2eb43504></span>
+                    </p>
+                  </td>
+                </tr>
+                <tr class="c7" data-v-2eb43504>
+                  <td colspan="3" rowspan="1" class="c18" data-v-2eb43504>
+                    <span class="c0" data-v-2eb43504>16. El V selección la opción Agregar.</span>
+                  </td>
+                  <td colspan="3" rowspan="1" class="c17" data-v-2eb43504>
+                    <p class="c13 c19" data-v-2eb43504>
+                      <span class="c0" data-v-2eb43504></span>
+                    </p>
+                  </td>
+                </tr>
+                <tr class="c7" data-v-2eb43504>
+                  <td colspan="3" rowspan="1" class="c18" data-v-2eb43504>
+                    <span class="c0" data-v-2eb43504>17. El sistema muestra el registro con los siguientes datos: Variedad, Tipo, Tamaño, Cantidad, SubTotal.</span>
+                  </td>
+                  <td colspan="3" rowspan="1" class="c17" data-v-2eb43504>
+                    <p class="c13 c19" data-v-2eb43504>
+                      <span class="c0" data-v-2eb43504></span>
+                    </p>
+                  </td>
+                </tr>
+                <tr class="c7" data-v-2eb43504>
+                  <td colspan="3" rowspan="1" class="c18" data-v-2eb43504>
+                    <span class="c0" data-v-2eb43504>18. El sistema calculara el monto total del pedido.</span>
+                  </td>
+                  <td colspan="3" rowspan="1" class="c17" data-v-2eb43504>
+                    <p class="c13 c19" data-v-2eb43504>
+                      <span class="c0" data-v-2eb43504></span>
+                    </p>
+                  </td>
+                </tr>
+                <tr class="c7" data-v-2eb43504>
+                  <td colspan="3" rowspan="1" class="c18" data-v-2eb43504>
+                    <span class="c0" data-v-2eb43504>19. El sistema solicita la confirmación del pedido.</span>
+                  </td>
+                  <td colspan="3" rowspan="1" class="c17" data-v-2eb43504>
+                    <p class="c13 c19" data-v-2eb43504>
+                      <span class="c0" data-v-2eb43504></span>
+                    </p>
+                  </td>
+                </tr>
+                <tr class="c7" data-v-2eb43504>
+                  <td colspan="3" rowspan="1" class="c18" data-v-2eb43504>
+                    <span class="c0" data-v-2eb43504>20. El V selecciona la opción Aceptar.</span>
+                  </td>
+                  <td colspan="3" rowspan="1" class="c17" data-v-2eb43504>
+                    <p class="c13" data-v-2eb43504>
+                      <span class="c0" data-v-2eb43504>20.A Opción Cancelar.</span>
+                    </p>
+                    <p class="c13" data-v-2eb43504>
+                      <span class="c0" data-v-2eb43504>    20.A.1 El sistema muestra la situación.</span>
+                    </p>
+                    <p class="c13" data-v-2eb43504>
+                      <span class="c0" data-v-2eb43504>    20.A.2 Cancelar Caso de Uso.</span>
+                    </p>
+                  </td>
+                </tr>
+                <tr class="c7" data-v-2eb43504>
+                  <td colspan="3" rowspan="1" class="c18" data-v-2eb43504>
+                    <span class="c0" data-v-2eb43504>21. El sistema registra el pedido con los siguientes datos: Fecha, Hora, NombreCliente, TelefonoCliente,
+                      Localidad, Barrio, Calle, Altura, Variedad, Tipo, Tamaño, Cantidad. </span>
+                  </td>
+                  <td colspan="3" rowspan="1" class="c17" data-v-2eb43504>
+                    <p class="c13 c19" data-v-2eb43504>
+                      <span class="c0" data-v-2eb43504></span>
+                    </p>
+                  </td>
+                </tr>
+                <tr class="c7" data-v-2eb43504>
+                  <td colspan="3" rowspan="1" class="c18" data-v-2eb43504>
+                    <span class="c0" data-v-2eb43504>22. Fin Caso de Uso.</span>
+                  </td>
+                  <td colspan="3" rowspan="1" class="c17" data-v-2eb43504>
+                    <p class="c13 c19" data-v-2eb43504>
+                      <span class="c0" data-v-2eb43504></span>
+                    </p>
+                  </td>
+                </tr>
+                <tr class="c7" data-v-2eb43504>
+                  <td colspan="6" rowspan="1" class="c20" data-v-2eb43504>
+                    <p class="c26" data-v-2eb43504>
+                      <span class="c5" data-v-2eb43504>Observaciones: </span>
+                      <span class="c12" data-v-2eb43504>No aplica.</span>
+                    </p>
+                  </td>
+                </tr>
+                <tr class="c7" data-v-2eb43504>
+                  <td colspan="6" rowspan="1" class="c20" data-v-2eb43504>
+                    <p class="c26" data-v-2eb43504>
+                      <span class="c5" data-v-2eb43504>Asociaciones de Extensión:  </span>
+                      <span class="c12" data-v-2eb43504>Calcular Costo de Envio.</span>
+                    </p>
+                  </td>
+                </tr>
+                <tr class="c7" data-v-2eb43504>
+                  <td colspan="6" rowspan="1" class="c20" data-v-2eb43504>
+                    <p class="c26" data-v-2eb43504>
+                      <span class="c5" data-v-2eb43504>Asociaciones de Inclusión: </span>
+                      <span class="c12" data-v-2eb43504>No aplica.</span>
+                    </p>
+                  </td>
+                </tr>
+                <tr class="c7" data-v-2eb43504>
+                  <td colspan="6" rowspan="1" class="c20" data-v-2eb43504>
+                    <p class="c26" data-v-2eb43504>
+                      <span class="c5" data-v-2eb43504>Use Case donde se incluye: </span>
+                      <span class="c12" data-v-2eb43504>No aplica.</span>
+                    </p>
+                  </td>
+                </tr>
+                <tr class="c7" data-v-2eb43504>
+                  <td colspan="6" rowspan="1" class="c20" data-v-2eb43504>
+                    <p class="c26" data-v-2eb43504>
+                      <span class="c5" data-v-2eb43504>Use Case al que extiende: </span>
+                      <span class="c12" data-v-2eb43504>No aplica.</span>
+                    </p>
+                  </td>
+                </tr>
+                <tr class="c7" data-v-2eb43504>
+                  <td colspan="6" rowspan="1" class="c20" data-v-2eb43504>
+                    <p class="c25 c33" data-v-2eb43504>
+                      <span class="c5 c9" data-v-2eb43504>Use Case de Generalización: </span>
+                      <span class="c0" data-v-2eb43504>No aplica.</span>
+                    </p>
+                  </td>
+                </tr>
+                <tr class="c7" data-v-2eb43504>
+                  <td colspan="4" rowspan="1" class="c23" data-v-2eb43504>
+                    <p class="c25 c33" data-v-2eb43504>
+                      <span class="c5 c9" data-v-2eb43504>Autor: </span>
+                      <span class="c0" data-v-2eb43504>Plan 111mil</span>
+                      <span class="c5 c9" data-v-2eb43504>        </span>
+                    </p>
+                  </td>
+                  <td colspan="2" rowspan="1" class="c31" data-v-2eb43504>
+                    <p class="c25 c33" data-v-2eb43504>
+                      <span class="c5 c9" data-v-2eb43504>Fecha Creación</span>
+                      <span class="c9 c28" data-v-2eb43504>: 01/06/2018</span>
+                    </p>
+                  </td>
+                </tr>
+                <tr class="c7" data-v-2eb43504>
+                  <td colspan="4" rowspan="1" class="c23" data-v-2eb43504>
+                    <p class="c25 c33" data-v-2eb43504>
+                      <span class="c5 c9" data-v-2eb43504>Autor Última Modificación: </span>
+                      <span class="c0" data-v-2eb43504>Plan 111mil</span>
+                    </p>
+                  </td>
+                  <td colspan="2" rowspan="1" class="c31" data-v-2eb43504>
+                    <p class="c25 c33" data-v-2eb43504>
+                      <span class="c5 c9" data-v-2eb43504>Fecha Última Modificación</span>
+                      <span class="c28 c9" data-v-2eb43504>: 01/06/2018</span>
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="c19 c40" data-v-2eb43504>
+              <span class="c28 c29" data-v-2eb43504></span>
+            </p>
+          </div>
+          <h2 id="maquina-de-estado">
+            <a href="#maquina-de-estado" aria-hidden="true" class="header-anchor">#</a> MÁQUINA DE ESTADO</h2>
+          <p>
+            <img src="./assets/img/maquina-de-estado.4dcd318a.svg" alt>
           </p>
           <h2 id="historial-de-versiones">
             <a href="#historial-de-versiones" aria-hidden="true" class="header-anchor">#</a> HISTORIAL DE VERSIONES</h2>
@@ -373,11 +881,11 @@
               </tr>
               <tr>
                 <td>Última Modificación:</td>
-                <td>02/05/2018</td>
+                <td>11/06/2018</td>
               </tr>
               <tr>
                 <td>Versión Actual:</td>
-                <td>1.11</td>
+                <td>1.15</td>
               </tr>
             </tbody>
           </table>
@@ -453,8 +961,9 @@
       </div>
     </div>
   </div>
-  <script src="./assets/js/0.70eb52a5.js" defer></script>
-  <script src="./assets/js/app.46ff74f3.js" defer></script>
+  <script src="./assets/js/1.ce3a71b2.js" defer></script>
+  <script src="./assets/js/2.2a7d45ed.js" defer></script>
+  <script src="./assets/js/app.a3eaf2cc.js" defer></script>
 </body>
 
 </html>

@@ -26,6 +26,7 @@ module.exports = {
           ['/#diagrama-de-entidad-relacion-der' ,'Diagrama de Entidad-Relación (DER)'],
           ['/#diagrama-de-clases-uml' ,'Diagrama de Clases (UML)'],
           ['/#diagrama-casos-de-usos-use-case' ,'Diagrama Casos de Usos (Use Case)'],
+          ['/#diagrama-casos-de-usos-trazo-fino' ,'Diagrama Casos de Usos Trazo Fino'],
           ['/#maquina-de-estado' ,'Máquina de Estado'],
           ['/#historial-de-versiones' ,'Historial de versiones'],
           ['/#integrantes' ,'Integrantes']

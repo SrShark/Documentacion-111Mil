@@ -144,6 +144,10 @@ Reutilización de servicios brindados por la interfaz brindada por cada capa. Me
 
 ![](./assets/diagrama-caso-de-uso.svg)
 
+## DIAGRAMA CASOS DE USOS TRAZO FINO
+
+<caso-de-uso-trazo-fino></caso-de-uso-trazo-fino>
+
 ## MÁQUINA DE ESTADO
 
 ![](./assets/maquina-de-estado.svg)
@@ -153,8 +157,8 @@ Reutilización de servicios brindados por la interfaz brindada por cada capa. Me
 |Control de Versionado  |Datos        |
 |-----------------------|-------------|
 |Fecha de Creación:     |15/04/2018   |
-|Última Modificación:   |09/05/2018   |
-|Versión Actual:        |1.13         |
+|Última Modificación:   |11/06/2018   |
+|Versión Actual:        |1.15         |
 
 ## INTEGRANTES
 
