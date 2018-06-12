@@ -6,7 +6,7 @@
 
 En el siguiente documento se desarrolla las características esenciales de un sistema de información correspondiente al dominio de Caso Práctico Nº2 - Pizzeria en el marco del Plan111. 
 
-Estas características comprenden la definición de los [objetivos](#objetivos), [límites](#limite), [alcances del sistema](#alcances), los [procesos que se llevan a cabo](#procesos-que-se-llevan-a-cabo) dentro del mismo, su [arquitectura de software](#arquitectura-de-software), [tecnologías aplicadas](#tecnologias-aplicadas) en el desarrollo, definición de la estructuras de la base de datos a través del [diagrama de entidad-relación](#diagrama-de-entidad-relacion-der), la [diagramación del modelo](#diagrama-de-clases-uml) del sistema en lenguaje de modelado unificado (UML), [diagrama de casos de uso](#diagrama-casos-de-usos-use-case), [trazo fino](#diagrama-casos-de-usos-trazo-fino) y [máquina de estado](#maquina-de-estado).
+Estas características comprenden la definición de los [objetivos](#objetivos), [límites](#limite), [alcances del sistema](#alcances), los [procesos que se llevan a cabo](#procesos-que-se-llevan-a-cabo) dentro del mismo, su [arquitectura de software](#arquitectura-de-software), [tecnologías aplicadas](#tecnologias-aplicadas) en el desarrollo, definición de la estructuras de la base de datos a través del [diagrama de entidad-relación](#diagrama-de-entidad-relacion-der), la [diagramación del modelo](#diagrama-de-clases-uml) del sistema en lenguaje de modelado unificado (UML), [diagrama de casos de uso](#diagrama-casos-de-usos-use-case) y [máquina de estado](#).
 Para la obtención de datos necesarios se utilizó el dominio de negocio aportado por el Plan111 como base añadiendo el proceso de Delivery.
 
 ### Dominio
@@ -134,7 +134,7 @@ Reutilización de servicios brindados por la interfaz brindada por cada capa. Me
 
 ## DIAGRAMA DE ENTIDAD-RELACIÓN (DER)
 
-![](./assets/diagrama-entidad-relacion-der.jpg)
+![](./assets/diagrama-entidad-relacion-der.svg)
 
 ## DIAGRAMA DE CLASES (UML)
 
@@ -160,7 +160,7 @@ Reutilización de servicios brindados por la interfaz brindada por cada capa. Me
 |-----------------------|-------------|
 |Fecha de Creación:     |15/04/2018   |
 |Última Modificación:   |12/06/2018   |
-|Versión Actual:        |1.16         |
+|Versión Actual:        |1.17         |
 
 ## INTEGRANTES
 
