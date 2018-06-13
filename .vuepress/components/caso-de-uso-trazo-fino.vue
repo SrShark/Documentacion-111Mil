@@ -328,20 +328,7 @@
         <td class="width-50" colspan="3" rowspan="1">
           <p>
             <span>21. El sistema registra el pedido con los siguientes datos:</span>
-            <ul class="ul-table">
-              <li>Fecha</li>
-              <li>Hora</li>
-              <li>NombreCliente</li>
-              <li>TelefonoCliente</li>
-              <li>Localidad</li>
-              <li>Barrio</li>
-              <li>Calle</li>
-              <li>Altura</li>
-              <li>Variedad</li>
-              <li>Tipo</li>
-              <li>Tamaño</li>
-              <li>Cantidad</li>
-            </ul>
+              <p>Fecha, Hora, NombreCliente, TelefonoCliente, Localidad, Barrio, Calle, Altura, Variedad, Tipo, Tamaño, Cantidad</p>
           </p>
         </td>
         <td colspan="3" rowspan="1"></td>

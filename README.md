@@ -15,7 +15,7 @@ A continuación se detalla el enunciado para conocer el dominio con el cual se t
 
 Una `pizzería` de la ciudad ofrece a sus clientes una amplia `variedad de pizzas` de fabricación propia, de `varios tamaños (8, 10 y 12 porciones)`. Los clientes tienen a disposición un menú que describe para cada una de las `variedades`, el `nombre`, los `ingredientes` y el `precio` según el `tamaño` y el `tipo (a la piedra, a la parrilla, de molde)` de la `pizza`. Los clientes realizan sus pedidos en el mostrador o por teléfono.
 
-El `pedido` debe contener el `nombre del cliente`, para llamarlo cuando su pedido está listo; la `cantidad de pizzas`, el `tamaño`, la `variedad`, la `fecha del pedido`, la `hora` en la que el pedido debe entregarse y la `demora estimada` informada al cliente.
+El `pedido` debe contener el `nombre del cliente`, para llamarlo cuando su pedido está listo; la `cantidad de pizzas`, el `tamaño`, la `variedad`, la `fecha del pedido` y la `demora estimada` informada al cliente.
 
 El pedido va a la cocina y cuando está preparado se informa al que lo tomó para que se genere la `factura` correspondiente y se le entregue el pedido al cliente.
 
@@ -27,7 +27,7 @@ El dueño de la pizzería ha manifestado la necesidad de acceder al menos a la s
 * Ingresos (recaudaciones) por períodos de tiempo.
 * Pedidos (cantidad y monto) por períodos de tiempo.
 * Barrios donde más se realizan entregas de pedidos.
-* Mejorar la información entregada al cadete para realizar los viajes.
+* Entregar hoja de ruta al personal de entrega.
 
 ## DESARROLLO
 
@@ -35,18 +35,17 @@ El dueño de la pizzería ha manifestado la necesidad de acceder al menos a la s
 
 El sistema prestará soporte a los siguientes procesos que se llevan a cabo dentro de la organización:
 
-* **Pedido**: Cada pedido es generado por el cliente cuando éste los solicita teniendo a disposición un menú que describe para cada uno la variedad, nombre, ingredientes, precio y tipo de pizza que desee. Luego de que el cliente realiza la elección se despacha el pedido hacia la cocina, previamente registrado cliente, menues elegidos y fecha. Además se notifica al cliente la demora estimada del pedido.
+* **Pedido**: Cada pedido es generado por el cliente cuando éste los solicita teniendo a disposición un menú que describe para cada uno la variedad, nombre, ingredientes, precio y tipo de pizza que desee. Luego de que el cliente realiza la elección se despacha el pedido hacia la cocina, con datos del cliente y del pedido. Además se notifica al cliente la demora estimada del pedido.
 
 * **Confección de Menú**: La confección del menú para ofrecer a los clientes se establecen en base al tipo de pizza, la variedad y tamaño de la misma.
 
 * **Envíos a domicilio (Delivery)**: En el supuesto que la entrega del pedido sea a domicilio, se le pedirá al cliente que informe su domicilio y número de teléfono para realizar la entrega. Se deberá tener en cuenta que el personal de entrega podrá llevar más de un pedido por viaje. El coste de este envío estará determinado por medio de un cálculo según la distancia que se encuentre el domicilio del negocio con respecto a la del cliente.
 
-
 ## LÍMITE
 
 ### El límite de este sistema es:
 
-Desde la confección de menues y pedido realizado por el cliente, hasta la emisión de informes con la información de las recaudaciones variedades y tipos de pizzas más solicitados y pedidos solicitados, junto con las zonas o barrios donde se realizan más entregas y tiempos de entregas.
+Desde la confección de menues, pedidos, registros de personal hasta la emisión de informes con la información requerida por el dueño.
 
 ## PROPIEDADES DEL SISTEMA
 
@@ -55,28 +54,31 @@ Desde la confección de menues y pedido realizado por el cliente, hasta la emisi
 * Brindar soporte en la gestión de los pedidos de la Pizzería. 
 * Proveer información de los procesos que abarca.
 
-### Alcances
+### Requerimientos
 
 * Atender la consulta del cliente (telefónica o personal) por el empleado.
 
 * Buscar el/los menues que el cliente solicita por el empleado.
 
-* Si el cliente esta dentro del local, entregar el/los menues al cliente por el empleado.
+* Si el cliente esta dentro del local, deberá entregar el/los menues al cliente por el empleado.
 
-* Gestionar Registrar el pedido.
+* El empleado toma los datos del pedido al cliente.
 
-* Si el pedido fue solicitado con entrega a domicilio, cargar el mismo en el vehiculo de deliveri por el empleado.
+* Si el pedido fue solicitado con entrega a domicilio, estimar el costo de envio con los datos aportados por el cliente.
 
-* Asignar el pedido a un PersonaldeEntrega para que se realize la entrega.
+### Alcances
 
 * Registrar los menues que se ofrecen a los clientes.
-Realizar informes con la información solicitada por el dueño de la organización.
 
 * Registrar datos del Personal de Entrega junto con sus vehiculos.
 
-* Registrar datos del cliente (se usara el telefono como identificacion principal), con domicilio detallando ciudad, barrio, calle y altura.
+* Gestionar el pedido desde su registro hasta la entrega.
 
-* El sistema debera ofrecer una hoja de ruta recomendada para entregarle o sugerirle al Personal de entrega y asi optimizar tiempo y calidad de servicio.
+* Asignar el pedido a un PersonaldeEntrega para que se realize la entrega.
+
+* Realizar informes con la información solicitada por el dueño de la organización.
+
+* El sistema debera ofrecer una hoja de ruta recomendada para entregarle o sugerirle al personal de entrega y asi optimizar tiempo y calidad de servicio.
 
 ## ARQUITECTURA DE SOFTWARE
 
@@ -84,7 +86,7 @@ Se define una arquitectura `CLIENTE - SERVIDOR` desktop – arquitectura en capa
 
 ### Aplicación:
 
-Se utiliza el patrón para organizar la implementación de este sistema complejo en capas de servicios auto contenidas, para logar un sistema mantenible, de bajo acoplamiento, adaptable y escalable.
+Se utiliza el patrón para organizar la implementación de este sistema complejo en capas de servicios auto contenidas, para logar un sistema mantenible, de bajo acoplamiento, adaptable y escalable. Mejorando la portabilidad, los cambios de hardware, del sistema operativo y todo lo que afecta solamente a una capa, se pueden modificar sin alterar al resto de las capas.
 
 ::: tip CAPA DE PRESENTACIÓN
 Vista Desktop
@@ -97,10 +99,6 @@ Controladores
 ::: tip CAPA DE PERSISTENCIA
 ORM - Hibernate
 :::
-
-### Motivaciones:
-
-Reutilización de servicios brindados por la interfaz brindada por cada capa. Mejorar la portabilidad. Los cambios de hardware, del sistema operativo y todo lo que afecta solamente a una capa, se pueden modificar sin alterar al resto de las capas.
 
 ## TECNOLOGÍAS APLICADAS
 
@@ -132,9 +130,6 @@ Reutilización de servicios brindados por la interfaz brindada por cada capa. Me
 
   * [Dependecia Lombok](https://mvnrepository.com/artifact/org.projectlombok/lombok)
 
-## DIAGRAMA DE ENTIDAD-RELACIÓN (DER)
-
-![](./assets/diagrama-entidad-relacion-der.svg)
 
 ## DIAGRAMA DE CLASES (UML)
 
@@ -154,26 +149,30 @@ Reutilización de servicios brindados por la interfaz brindada por cada capa. Me
 
 ![](./assets/maquina-de-estado-personal-entrega.svg)
  
+## DIAGRAMA DE ENTIDAD-RELACIÓN (DER)
+
+![](./assets/diagrama-entidad-relacion-der.svg)
+
 ## HISTORIAL DE VERSIONES
 
 |Control de Versionado  |Datos        |
 |-----------------------|-------------|
 |Fecha de Creación:     |15/04/2018   |
-|Última Modificación:   |12/06/2018   |
-|Versión Actual:        |1.17         |
+|Última Modificación:   |13/06/2018   |
+|Versión Actual:        |1.18         |
 
 ## INTEGRANTES
 
-|Equipos        |Integrantes                                        |
-|---------------|---------------------------------------------------|
-|Profesores     |Araceli Mendoza                                    |
-|               |[Nicolás Oliva](https://github.com/nicolasoliva62) | 
-|               |Ramiro Bertalot                                    | 
-|Equipo A       |[Guido Cavallo](https://github.com/SrShark)        |
-|               |[Sebastián Cuaglia](https://github.com/sebacuaglia)| 
-|               |[Ruben Malizia](https://github.com/Malizia27)      | 
-|               |[Pablo Cruciani](https://github.com/PabloCruciani) | 
-|Equipo B       |[Daniel Rosso](https://github.com/daniel1rosso)    | 
-|               |[Pablo Mansilla](https://github.com/paulmansilla)  | 
-|               |[Federico Boccardo](https://github.com/Feedeac)    | 
-|               |Hernán Grosso                                      |
+|Equipos        |Integrantes                                                              |
+|---------------|-------------------------------------------------------------------------|
+|Profesores     |[Araceli Mendoza](https://www.linkedin.com/in/aracelli-mendoza-8765a549/)|
+|               |[Nicolás Oliva](https://github.com/nicolasoliva62)                       | 
+|               |Ramiro Bertalot                                                          | 
+|Equipo A       |[Guido Cavallo](https://www.linkedin.com/in/cavalloguido/)               |
+|               |[Sebastián Cuaglia](https://github.com/sebacuaglia)                      | 
+|               |[Ruben Malizia](https://github.com/Malizia27)                            | 
+|               |[Pablo Cruciani](https://github.com/PabloCruciani)                       | 
+|Equipo B       |[Daniel Rosso](https://github.com/daniel1rosso)                          | 
+|               |[Pablo Mansilla](https://github.com/paulmansilla)                        | 
+|               |[Federico Boccardo](https://github.com/Feedeac)                          | 
+|               |Hernán Grosso                                                            |
